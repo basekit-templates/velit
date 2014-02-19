@@ -1,8 +1,7 @@
+
 {% extends "layout.twig" %}
 
 {% block content %}
-
-<div class="bk-pt-default">
 
 <div class="tabletmob-nav">
         {% if pages|length > 1 %}
@@ -13,11 +12,11 @@
 <div class="feature-content">
     {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
     <header class="bk-header">
-        <div class="desktop-nav">
+    	<div class="desktop-nav">
         {% if pages|length > 1 %}
             {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
         {% endif %}
-        </div>
+    	</div>
         <div class="wrapper">
             <div class="companyheader">
                 {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -27,13 +26,15 @@
     </header>
 </div>
 
-<div class="header-text-widgets wrapper clearfix">
-    {{widget('content', 'headercontent1', {"content":"<h3>Lorem ipsum dolor</h3>"})|raw}}
-    {{widget('content', 'headercontent2', {"content":"<p>velit vel eleifend turpis malesuada eget. </p>"})|raw}}
+<div class="main wrapper clearfix">
+	<div class="header-text-widgets">
+		{{widget('content', 'headercontent1', {"content":"<h3>Lorem ipsum dolor</h3>"})|raw}}
+		{{widget('content', 'headercontent2', {"content":"<p>velit vel eleifend turpis malesuada eget. </p>"})|raw}}
+	</div>
+	{{widget('menusections', 'menusections1', {})|raw}}
+	{{widget('menu', 'menu1', {})|raw}}
 </div>
 
-<div class="main wrapper clearfix">
-    {{zone('main')|raw}}
 </div>
 
 <footer class="bk-footer">
@@ -41,9 +42,5 @@
         {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
     </div>
 </footer>
-
-</div>
-
-</div>
 
 {% endblock %}
