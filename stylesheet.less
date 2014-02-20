@@ -92,7 +92,10 @@ body {
     h3 {
         padding: 0;
     }
+}
 
+.nav-header {
+    line-height: 0;
 }
 
 /* ===============================
@@ -102,7 +105,8 @@ body {
 .tabletmob-nav {
     display: none;
     @media @tablet {
-        display: block;
+        display: inline-block;
+        width: 100%;
         z-index: 99999;
         min-height: 40px;
     }
