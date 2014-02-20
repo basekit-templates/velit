@@ -278,14 +278,16 @@ body {
 }
 
 .widget.feature .content .spare {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  padding: 3em 0 0;
-  margin: 0 auto; 
-  @media @tablet {
-    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 3em 0 0;
+    margin: 0 auto; 
+    background-color: @color-swatch1;
+    @media @tablet {
+        display: none;
+    }
 }
 
 /* FEATURE TITLE & STRAPLINE */
@@ -299,6 +301,22 @@ body {
             width: 960px;
             margin: 0 auto;
         }
+    }
+    h2 {
+        font-family: @font-swatch8-font-family;
+        font-size: @font-swatch8-font-size;
+        font-weight: @font-swatch8-font-weight;
+        line-height: @font-swatch8-line-height;
+        color: @font-swatch8-color;
+        letter-spacing: @font-swatch8-letter-spacing;
+    }
+    h3 {
+        font-family: @font-swatch9-font-family;
+        font-size: @font-swatch9-font-size;
+        font-weight: @font-swatch9-font-weight;
+        line-height: @font-swatch9-line-height;
+        color: @font-swatch9-color;
+        letter-spacing: @font-swatch9-letter-spacing;
     }
 }
 
