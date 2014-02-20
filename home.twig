@@ -6,7 +6,7 @@
 <div class="nav-header">
     <div class="tabletmob-nav">
             {% if pages|length > 1 %}
-                {{widget('extendednavigation', 'tabletmobnavigation')|raw}}
+                {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
             {% endif %}
     </div>
 
@@ -15,7 +15,7 @@
         <header class="bk-header">
         	<div class="desktop-nav">
             {% if pages|length > 1 %}
-                {{widget('extendednavigation', 'desktopnavigation')|raw}}
+                {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
             {% endif %}
         	</div>
             <div class="wrapper">
