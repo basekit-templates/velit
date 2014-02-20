@@ -4,27 +4,25 @@
 
 <div class="bk-pt-default">
 
-<div class="tabletmob-nav">
-        {% if pages|length > 1 %}
-            {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
-        {% endif %}
-</div>
+<div class="nav-header">
+    <div class="tabletmob-nav">
+                {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
+    </div>
 
-<div class="feature-content">
-    {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
-    <header class="bk-header">
-        <div class="desktop-nav">
-        {% if pages|length > 1 %}
-            {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
-        {% endif %}
-        </div>
-        <div class="wrapper">
-            <div class="companyheader">
-                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    <div class="feature-content">
+        {{widget('feature', 'featurehome', {"header": "", "strapline":"", "buttonText":"","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': false})|raw}}
+        <header class="bk-header">
+            <div class="desktop-nav">
+                {{widget('extendednavigation', 'desktopnavigation', {})|raw}}
             </div>
-        </div>
-    </header>
+            <div class="wrapper">
+                <div class="companyheader">
+                    {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                    {{widget('companyname', 'companyname', {"business": ""})|raw}}
+                </div>
+            </div>
+        </header>
+    </div>
 </div>
 
 <div class="header-text-widgets wrapper clearfix">
@@ -41,8 +39,6 @@
         {{widget('socialicons', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
     </div>
 </footer>
-
-</div>
 
 </div>
 
