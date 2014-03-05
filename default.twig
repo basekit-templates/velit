@@ -6,7 +6,7 @@
 
 <div class="nav-header">
     <div class="tabletmob-nav">
-                {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
+        {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
     </div>
 
     <div class="feature-content">
@@ -26,7 +26,7 @@
 </div>
 
 <div class="main wrapper clearfix">
-    {{zone('main')|raw}}
+    {{widget('ecomproduct', 'ecomproduct', {})|raw}}
 </div>
 
 <footer class="bk-footer">
@@ -35,6 +35,10 @@
     </div>
 </footer>
 
+</div>
+
+<div class="basket-container">
+    {{widget('ecombasket', 'ecombasket', {})|raw}}
 </div>
 
 {% endblock %}
