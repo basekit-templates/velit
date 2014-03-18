@@ -1,9 +1,9 @@
 {
-    "name":"VELIT",
+    "name":"Velit",
     "thumbnail":"velit.png",
     "screenshot":"velit.png",
     "tags": {
-    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
+    "en": ["clean", "menu", "cafe", "bar", "restaurant", "wide", "sharp", "clean", "minimal", "header", "image", "muted", "san-serif"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
     "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
     },
